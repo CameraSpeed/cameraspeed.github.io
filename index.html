@@ -6,6 +6,15 @@
     <title>Camera Speed | Cinematography Fundamentals</title>
     <meta name="description" content="Level up your photography and cinematography. Practical tutorials on camera, lighting, and the craft of making better images.">
     
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cameraspeedstudio.com/">
+    <meta property="og:title" content="Camera Speed | The Craft of Image-Making">
+    <meta property="og:description" content="Level up your photography and cinematography. Practical tutorials on camera, lighting, and the craft of making better images.">
+    <meta property="og:image" content="https://cameraspeedstudio.com/cameraspeedlogo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cameraspeedstudio.com/cameraspeedlogo.png">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,28 +86,14 @@
         }
         
         .logo {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            letter-spacing: 0.15em;
-            color: var(--white);
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 0.75rem;
         }
         
-        .logo-icon {
-            width: 8px;
-            height: 8px;
-            background: var(--tungsten);
-            border-radius: 50%;
-            box-shadow: 0 0 10px var(--tungsten), 0 0 20px var(--tungsten-dim);
-            animation: pulse 2s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+        .logo-img {
+            height: 40px;
+            width: auto;
         }
         
         .nav-links {
@@ -610,8 +605,7 @@
 <body>
     <header>
         <a href="#" class="logo">
-            <span class="logo-icon"></span>
-            CAMERA SPEED
+            <img src="cameraspeedlogo.png" alt="Camera Speed" class="logo-img">
         </a>
         <nav>
             <ul class="nav-links">
